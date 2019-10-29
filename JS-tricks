@@ -1,0 +1,17 @@
+//Multiplying each of the numbers in an array using reduce
+const grow = x => x.reduce((a, b) => (a * b))
+
+//Multiplying each of the numbers in an array using eval
+const fill = y => eval(y.join("*"))
+
+//Getting the sum of all positive numbers in an array using eval
+const positiveSum = x => {
+  let arr = x.filter(n => n > 0)
+  return arr.length > 0 ? eval((arr.join('+'))) : 0
+}
+
+//Getting the sum of all positive numbers in an array reduce
+const ps = arr => arr.reduce((sum, n) => n > 0 ? sum + n : sum, 0)
+
+//Basic Math operation
+const basicOp = (operation, value1, value2) => eval(value1 + operation + value2)
