@@ -18,3 +18,7 @@ Getting items in an array whose length are equal to 4 using filter
 ```
 const friend = friends => friends.filter(i => i.length === 4)
 ```
+Adding two numbers together and returning their sum in binary
+```
+const addBinary = (a, b) => (a + b).toString(2)
+```
