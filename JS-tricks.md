@@ -1,18 +1,20 @@
-//Multiplying each of the numbers in an array using reduce
-``` const grow = x => x.reduce((result, n) => result * n, 1) ```
-
-//Multiplying each of the numbers in an array using eval
-``` const fill = y => eval(y.join("*")) ```
-
-//Getting the sum of all positive numbers in an array using eval
+Multiplying each of the numbers in an array using reduce
 ``` 
-const positiveSum = x => {
-  let arr = x.filter(n => n > 0)
-  return arr.length > 0 ? eval((arr.join('+'))) : 0
-}
+const grow = x => x.reduce((result, n) => result * n, 1) 
 ```
-//Getting the sum of all positive numbers in an array reduce
-``` const ps = arr => arr.reduce((sum, n) => n > 0 ? sum + n : sum, 0) ```
-
-//Basic Math operation
-``` const basicOp = (operation, value1, value2) => eval(value1 + operation + value2) ```
+Multiplying each of the numbers in an array using eval
+``` 
+const fill = y => eval(y.join("*")) 
+```
+Getting the sum of all positive numbers in an array using reduce
+``` 
+const ps = arr => arr.reduce((sum, n) => n > 0 ? sum + n : sum, 0) 
+```
+Basic Math operation using eval
+``` 
+const basicOp = (operation, value1, value2) => eval(value1 + operation + value2) 
+```
+Getting items in an array whose length are equal to 4 using filter
+```
+const friend = friends => friends.filter(i => i.length === 4)
+```
