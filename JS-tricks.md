@@ -22,3 +22,7 @@ Adding two numbers together and returning their sum in binary
 ```
 const addBinary = (a, b) => (a + b).toString(2)
 ```
+Flattening and sorting an array
+```
+const flattenAndSort = array => [].concat(...array).sort((a, b) => a - b) 
+```
