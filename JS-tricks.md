@@ -26,3 +26,7 @@ Flattening and sorting an array
 ```
 const flattenAndSort = array => [].concat(...array).sort((a, b) => a - b) 
 ```
+Password validator that is atleast six characters long, contains a lowercase letter, contains an uppercase letter, contains a number
+```
+const validate = password => /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[a-zA-Z0-9]{6,}$/.test(password)
+```
