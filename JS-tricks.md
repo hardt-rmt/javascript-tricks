@@ -48,3 +48,7 @@ Removing duplicates in an array using Sets()
 ```
 const removeDuplicateWords = s => [...new Set(s.split(' '))].join(' ')
 ```
+Vowel Count in a string
+```
+const getCount = str => (str.match(/[aeiou]/gi) || []).length
+```
