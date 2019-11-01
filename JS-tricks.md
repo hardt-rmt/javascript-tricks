@@ -30,3 +30,17 @@ Password validator that is atleast six characters long, contains a lowercase let
 ```
 const validate = password => /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[a-zA-Z0-9]{6,}$/.test(password)
 ```
+Inverting a Hash or the keys and values of an object
+```
+const invertHash = hash => Object.keys(hash).reduce((obj, v) => (obj[hash[v]] = v, obj), {});
+
+or
+
+const invertHash = hash => {
+  let result = {}
+  for (let key in hash) {
+    result[hash[key]] = key
+  }
+  return result
+}
+```
