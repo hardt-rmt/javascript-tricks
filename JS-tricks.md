@@ -44,3 +44,7 @@ const invertHash = hash => {
   return result
 }
 ```
+Removing duplicates in an array using Sets()
+```
+const removeDuplicateWords = s => [...new Set(s.split(' '))].join(' ')
+```
