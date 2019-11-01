@@ -52,3 +52,7 @@ Vowel Count in a string
 ```
 const getCount = str => (str.match(/[aeiou]/gi) || []).length
 ```
+Anagram Detection
+```
+const isAnagram = (test, original) => test.toLowerCase().split("").sort().join("") === original.toLowerCase().split("").sort().join("");
+```
