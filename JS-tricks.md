@@ -56,3 +56,32 @@ Anagram Detection
 ```
 const isAnagram = (test, original) => test.toLowerCase().split("").sort().join("") === original.toLowerCase().split("").sort().join("");
 ```
+
+Test
+```
+let str = 'foo000'
+function incrementString (strng) {
+  
+  let rString = '';
+  let rNum = '';
+  let regex1 = /[A-Z]/gi;
+  let regex2 = /\d/;
+  let count = 0;
+  for (let i = 0; i < strng.length; i++) {
+    if (strng[i].match(regex1)) {
+      rString += strng[i];
+    } else if (strng[i].match(regex2)) {
+      rNum += strng[i]
+      count++;
+    }
+  }
+  return 1.toString()
+  // return parseNum(rNum).split('').length
+  // if (!rNum) {
+  //   return rString + '1'
+  // }
+  // return rString + eval(parseInt(rNum) + 1).toString()
+}
+
+console.log(incrementString(str))
+```
